@@ -28,3 +28,7 @@ i {
     border-width: 1px;
     border-color: white;
   }
+  footer {
+    background-color: aquamarine;
+    color: white;
+  }
