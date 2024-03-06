@@ -76,7 +76,7 @@
                             <a class="nav-link" href="#carta_id">Destacados</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="#contacto_id">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -144,7 +144,10 @@
                     <div class="card" style="width: 90%;">
                         <img src="./assets/img/card1.jpg" class="card-img-top" alt="card 1">
                         <div class="card-body">
-                            <p class="card-text">Bosques y lagos, donde la naturaleza se abraza en armonía. Los árboles se inclinan sobre las tranquilas aguas, reflejando su majestuosidad. Criaturas de todos los tamaños encuentran refugio en este idílico escenario. La calma y la vida se entrelazan en este santuario natural.</p>
+                            <p class="card-text">Bosques y lagos, donde la naturaleza se abraza en armonía. Los árboles
+                                se inclinan sobre las tranquilas aguas, reflejando su majestuosidad. Criaturas de todos
+                                los tamaños encuentran refugio en este idílico escenario. La calma y la vida se
+                                entrelazan en este santuario natural.</p>
                         </div>
                     </div>
                 </div>
@@ -152,7 +155,10 @@
                     <div class="card" style="width: 90%;">
                         <img src="./assets/img/card2.jpg" class="card-img-top" alt="card 2">
                         <div class="card-body">
-                            <p class="card-text">En el desierto, un lago es un tesoro escondido. Sus aguas turquesas resplandecen entre la arena dorada y el cálido sol. Un oasis de vida y esperanza en medio del árido paisaje. Aquí, la naturaleza desafía las probabilidades y florece en la adversidad.</p>
+                            <p class="card-text">En el desierto, un lago es un tesoro escondido. Sus aguas turquesas
+                                resplandecen entre la arena dorada y el cálido sol. Un oasis de vida y esperanza en
+                                medio del árido paisaje. Aquí, la naturaleza desafía las probabilidades y florece en la
+                                adversidad.</p>
                         </div>
                     </div>
                 </div>
@@ -160,7 +166,9 @@
                     <div class="card" style="width: 90%;">
                         <img src="./assets/img/card3.jpg" class="card-img-top" alt="card 3">
                         <div class="card-body">
-                            <p class="card-text">El mar, un vasto lienzo de maravillas. Sus olas danzan en un eterno juego con el viento y la luna. Una sinfonía de vida acuática teje su melodía en las profundidades. La grandeza del océano evoca un sentimiento de reverencia y asombro.</p>
+                            <p class="card-text">El mar, un vasto lienzo de maravillas. Sus olas danzan en un eterno
+                                juego con el viento y la luna. Una sinfonía de vida acuática teje su melodía en las
+                                profundidades. La grandeza del océano evoca un sentimiento de reverencia y asombro.</p>
                         </div>
                     </div>
                 </div>
@@ -168,7 +176,10 @@
                     <div class="card" style="width: 90%;">
                         <img src="./assets/img/card4.jpg" class="card-img-top" alt="card 4">
                         <div class="card-body">
-                            <p class="card-text">En el bosque profundo, la vegetación se entrelaza en un abrazo verde. La luz se filtra entre los densos follajes, creando un ambiente de misterio y encanto. Criaturas nocturnas se mueven con sigilo entre los árboles centenarios. Aquí, la naturaleza revela su lado más salvaje y exuberante.</p>
+                            <p class="card-text">En el bosque profundo, la vegetación se entrelaza en un abrazo verde.
+                                La luz se filtra entre los densos follajes, creando un ambiente de misterio y encanto.
+                                Criaturas nocturnas se mueven con sigilo entre los árboles centenarios. Aquí, la
+                                naturaleza revela su lado más salvaje y exuberante.</p>
                         </div>
                     </div>
                 </div>
@@ -176,7 +187,31 @@
         </section>
         <!--Fin de seccion CARTA-->
         <!--Inicio de seccion CONTACTO-->
-        <section></section>
+        <section id="contacto_id">
+            <div>
+                <h2 class="d-flex justify-content-evenly py-3">Contacto</h2>
+            </div>
+            <div>
+                <form class="">
+                    <div class="py-2">
+                        <label class="form-label" for="">Nombre</label>
+                        <input class="form-control" type="text" name="nombre" required>
+                    </div>
+                    <div class="py-2">
+                        <label class="form-label" for="">Asunto</label>
+                        <input class="form-control" type="text" name="subject" required>
+                    </div>
+                    <div class="py-2">
+                        <label class="form-label" for="">Mensaje</label>
+                        <textarea class="form-control" name="mensaje" rows="5" maxlength="1000" minlength="50"
+                            required></textarea>
+                    </div>
+                    <div class="d-flex justify-content-start">
+                        <button type="button" class="btn btn-info">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
         <!--Fin de seccion CONTACTO-->
         <!--Fin de secciones-->
     </main>
