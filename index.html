@@ -35,7 +35,9 @@
     <!--Comentario: Aquí es donde se coloca el enlace a GOOGLEFONTS-->
 
     <!--Comentario: Aquí es donde se coloca el enlace a GOOGLEFONTS 2-->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Comentario: Aquí es donde se coloca el enlace a FONTAWESOME para los iconos-->
     <link rel="shortcut icon" href="./assets/img/viajes.svg" type="image/icon">
     <!--Comentario: Aqui es donde colocamos el ICONO de la pestaña del sitio-->
@@ -51,11 +53,12 @@
 <body>
     <!-- INICIO BODY -->
     <!-- INICIO HEADER -->
-    <header class="header">
+    <header id="header_navabar_id" class="header">
         <!-- INICIO NAVBAR -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html"><img id="svg_navbar" src="./assets/img/viajes.svg" alt="viajes svg">
+                <a class="navbar-brand" href="./index.html"><img id="svg_navbar" src="./assets/img/viajes.svg"
+                        alt="viajes svg">
                     Viajes Chile</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,10 +67,10 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        </li>                  
+                            <a class="nav-link active" aria-current="page" href="#header_navabar_id">Inicio</a>
+                        </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Quienes Somos</a>
+                            <a class="nav-link" href="#quienessomos_id">Quienes Somos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Destacados</a>
@@ -83,14 +86,43 @@
     </header>
     <!-- FIN HEADER -->
     <!-- INICIO MAIN -->
-    <!--Inicio de secciones-->
-    <!--Inicio de seccion TEXTO-->
-    <!--Fin de seccion TEXTO-->
-    <!--Inicio de seccion CARTA-->
-    <!--Fin de seccion CARTA-->
-    <!--Inicio de seccion CONTACTO-->
-    <!--Fin de seccion CONTACTO-->
-    <!--Fin de secciones-->
+    <main id="mainid" class="px-5 pt-2 pb-5">
+        <!--Inicio de secciones-->
+        <!--Inicio de seccion TEXTO-->
+        <section id="quienessomos_id">
+            <div class="d-flex justify-content-evenly py-3">
+                <h2>¿Quiénes Somos?</h2>
+            </div>
+            <div class="row">
+                <div class="col d-flex flex-column">
+                    <div class="d-flex justify-content-center div_icon">
+                        <i class="fa-solid fa-plane"></i>
+                    </div>
+                    <p>Para asegurar un vuelo sin contratiempos, es esencial seguir algunas medidas clave. En primer lugar, es importante llegar al aeropuerto con suficiente antelación para evitar el estrés de última hora y permitir tiempo para los procedimientos de seguridad. Además, es recomendable elegir asientos cerca del pasillo o de salida de emergencia para mayor comodidad y facilidad de movimiento durante el vuelo. No olvides hidratarte adecuadamente y evitar el exceso de alcohol y cafeína para minimizar la incomodidad causada por la deshidratación y el jet lag. Además, llevar contigo entretenimiento, como libros o dispositivos electrónicos, puede hacer que el tiempo de vuelo pase más rápido y sea más agradable.</p>
+                </div>
+                <div class="col d-flex flex-column">                  
+                    <p>Para una subida exitosa en la montaña, es crucial tomar precauciones adecuadas. Antes de comenzar la caminata, asegúrate de estar bien equipado con ropa y calzado adecuados, así como con suficiente agua y alimentos energéticos. Es esencial conocer el terreno y estudiar las condiciones climáticas para planificar la ruta y tomar decisiones informadas sobre el camino a seguir. Además, escucha tu cuerpo y haz paradas regulares para descansar y reponer fuerzas. No subestimes la importancia de la aclimatación a la altitud, especialmente en montañas altas, y mantente alerta ante posibles señales de mal de altura.</p>
+                    <div class="d-flex justify-content-center div_icon">
+                        <i class="fa-solid fa-mountain-sun"></i>
+                    </div>
+                </div>
+                <div class="col d-flex flex-column">
+                    <div class="d-flex justify-content-center div_icon">
+                        <i class="fa-solid fa-route"></i>
+                    </div>
+                    <p>Al emprender un viaje por carretera, hay varias consideraciones a tener en cuenta para garantizar la seguridad y la comodidad. Antes de partir, realiza un mantenimiento adecuado del vehículo, incluyendo la revisión de neumáticos, frenos y líquidos. Planifica la ruta con anticipación y considera las condiciones del tráfico y del clima para evitar contratiempos. Además, lleva contigo un kit de emergencia que incluya herramientas básicas, botiquín de primeros auxilios y provisiones adicionales. No olvides descansar lo suficiente y alternar la conducción con otro pasajero para evitar la fatiga al volante.</p>
+                </div>
+            </div>
+        </section>
+        <!--Fin de seccion TEXTO-->
+        <!--Inicio de seccion CARTA-->
+        <section></section>
+        <!--Fin de seccion CARTA-->
+        <!--Inicio de seccion CONTACTO-->
+        <section></section>
+        <!--Fin de seccion CONTACTO-->
+        <!--Fin de secciones-->
+    </main>
     <!-- FIN MAIN -->
     <!-- INICIO FOOTER -->
     <!-- FIN FOOTER -->
