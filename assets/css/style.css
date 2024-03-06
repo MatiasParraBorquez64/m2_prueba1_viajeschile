@@ -22,3 +22,9 @@
 i {
     color: white;
 }
+.card {
+    height: 100%; /* Establece una altura del 100% */
+    background-color: aquamarine;
+    border-width: 1px;
+    border-color: white;
+  }
