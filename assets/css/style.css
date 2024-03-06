@@ -1,0 +1,13 @@
+/* Inicia estilo de navbar/header */
+.header {
+    background: url(../img/header_nav_img.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+}
+.header .navbar {
+    background-color: transparent !important
+}
+#svg_navbar {
+    width: 25px;
+}
+#navbarNav {}
