@@ -1,8 +1,11 @@
 /* Inicia estilo de navbar/header */
-.header {
-    background: url(../img/header_nav_img.jpg) no-repeat center;
+/* .header {
+    background: url(../img/carousel1.jpg) no-repeat center;
     background-size: cover;
     min-height: 100vh;
+} */
+#header_navabar_id {
+    color: white;
 }
 .header .navbar {
     background-color: transparent !important
@@ -10,14 +13,23 @@
 #svg_navbar {
     width: 25px;
 }
-#navbarNav {}
-
+@media screen and (max-width: 577px) {
+    #quienessomos_id {
+        display: none;
+    }
+}
+@media screen and (max-width: 577px) {
+    #allcards_id {
+        display: flex;
+    }
+}
 #mainid {
     background-color: black;
     color: white;
 }
 .div_icon {
     background-color: aquamarine;
+    height: 55px;
 }
 i {
     color: white;
@@ -31,4 +43,5 @@ i {
   footer {
     background-color: aquamarine;
     color: white;
+    height: 50px;
   }

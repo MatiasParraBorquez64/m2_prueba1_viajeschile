@@ -43,9 +43,11 @@
     <!--Comentario: Aqui es donde colocamos el ICONO de la pestaña del sitio-->
     <link rel="stylesheet" href="./assets/css/style.css">
     <!--Comentario: Aqui es donde colocamos el enlace a la HOJA DE ESTILOS PROPIA-->
-
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!--Comentario: Aqui es donde colocamos el enlace a la HOJA DE JQUERY-->
-
+    <script rel="stylesheet" src="./assets/js/script.js"></script>
     <!--Comentario: Aqui es donde colocamos el enlace a la HOJA DE JAVA PROPIA-->
 </head>
 <!--Comentario: aqui finaliza el encabezado comienza el cuerpo-->
@@ -55,7 +57,7 @@
     <!-- INICIO HEADER -->
     <header id="header_navabar_id" class="header">
         <!-- INICIO NAVBAR -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html"><img id="svg_navbar" src="./assets/img/viajes.svg"
                         alt="viajes svg">
@@ -65,7 +67,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#header_navabar_id">Inicio</a>
                         </li>
@@ -82,6 +84,41 @@
                 </div>
             </div>
         </nav>
+        <section id="carrusel">
+            <div id="carrusel2" class="">
+                <div id="carouselExampleIndicators2" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/img/carousel1.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/carousel2.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/carousel3.jpg" alt="" class="w-100">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
         <!--  FIN NAVBAR -->
     </header>
     <!-- FIN HEADER -->
@@ -95,8 +132,8 @@
             </div>
             <div class="row">
                 <div class="col d-flex flex-column">
-                    <div class="d-flex justify-content-center div_icon">
-                        <i class="fa-solid fa-plane"></i>
+                    <div class="d-flex justify-content-center div_icon align-items-center">
+                        <i class="fa-solid fa-3x fa-plane"></i>
                     </div>
                     <p>Para asegurar un vuelo sin contratiempos, es esencial seguir algunas medidas clave. En primer
                         lugar, es importante llegar al aeropuerto con suficiente antelación para evitar el estrés de
@@ -115,13 +152,13 @@
                         seguir. Además, escucha tu cuerpo y haz paradas regulares para descansar y reponer fuerzas. No
                         subestimes la importancia de la aclimatación a la altitud, especialmente en montañas altas, y
                         mantente alerta ante posibles señales de mal de altura.</p>
-                    <div class="d-flex justify-content-center div_icon">
-                        <i class="fa-solid fa-mountain-sun"></i>
+                    <div class="d-flex justify-content-center div_icon align-items-center">
+                        <i class="fa-solid fa-3x fa-mountain-sun"></i>
                     </div>
                 </div>
                 <div class="col d-flex flex-column">
-                    <div class="d-flex justify-content-center div_icon">
-                        <i class="fa-solid fa-route"></i>
+                    <div class="d-flex justify-content-center div_icon align-items-center">
+                        <i class="fa-solid fa-3x fa-route"></i>
                     </div>
                     <p>Al emprender un viaje por carretera, hay varias consideraciones a tener en cuenta para garantizar
                         la seguridad y la comodidad. Antes de partir, realiza un mantenimiento adecuado del vehículo,
@@ -139,9 +176,9 @@
             <div class="d-flex justify-content-evenly py-3">
                 <h2>Destacados</h2>
             </div>
-            <div class="row">
+            <div id="allcards_id" class="row">
                 <div class="col">
-                    <div class="card" style="width: 90%;">
+                    <div class="card" style="width: 100%;">
                         <img src="./assets/img/card1.jpg" class="card-img-top" alt="card 1">
                         <div class="card-body">
                             <p class="card-text">Bosques y lagos, donde la naturaleza se abraza en armonía. Los árboles
@@ -152,7 +189,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card" style="width: 90%;">
+                    <div class="card" style="width: 100%;">
                         <img src="./assets/img/card2.jpg" class="card-img-top" alt="card 2">
                         <div class="card-body">
                             <p class="card-text">En el desierto, un lago es un tesoro escondido. Sus aguas turquesas
@@ -163,7 +200,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card" style="width: 90%;">
+                    <div class="card" style="width: 100%;">
                         <img src="./assets/img/card3.jpg" class="card-img-top" alt="card 3">
                         <div class="card-body">
                             <p class="card-text">El mar, un vasto lienzo de maravillas. Sus olas danzan en un eterno
@@ -173,7 +210,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card" style="width: 90%;">
+                    <div class="card" style="width: 100%;">
                         <img src="./assets/img/card4.jpg" class="card-img-top" alt="card 4">
                         <div class="card-body">
                             <p class="card-text">En el bosque profundo, la vegetación se entrelaza en un abrazo verde.
@@ -218,22 +255,22 @@
     <!-- FIN MAIN -->
     <!-- INICIO FOOTER -->
     <footer id="footer_id">
-        <section class="d-flex justify-content-around">
+        <section class="d-flex justify-content-around align-items-center">
             <div>
                 <h4>VIAJES CHILE</h4>
             </div>
             <div class="row d-flex justify-content-end">
                 <div class="col">
-                    <i class="fa-brands fa-square-github fa-3x"></i>
+                    <a href="https://github.com/" target="_blank"><i class="fa-brands fa-square-github fa-3x"></i></a>
                 </div>
                 <div class="col">
-                    <i class="fa-brands fa-linkedin fa-3x"></i>
+                    <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa-brands fa-linkedin fa-3x"></i></a>
                 </div>
                 <div class="col">
-                    <i class="fa-brands fa-square-twitter fa-3x"></i>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-twitter fa-3x"></i></a>
                 </div>
                 <div class="col">
-                    <i class="fa-brands fa-square-facebook fa-3x"></i>
+                    <a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-square-facebook fa-3x"></i></a>
                 </div>
             </div>
         </section>
