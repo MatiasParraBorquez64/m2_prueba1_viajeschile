@@ -1,11 +1,19 @@
 /* Inicia estilo de navbar/header */
-/* .header {
-    background: url(../img/carousel1.jpg) no-repeat center;
-    background-size: cover;
-    min-height: 100vh;
-} */
+
+* {
+    font-family: "Comic Neue", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+h2 {
+    font-size: 700;
+}
+p {
+    font-size: 500;
+}
 #header_navabar_id {
-    color: white;
+    font-size: x-large;
+    font-weight: 700;
 }
 .header .navbar {
     background-color: transparent !important
@@ -40,8 +48,12 @@ i {
     border-width: 1px;
     border-color: white;
   }
+  .custom-tooltip1 {
+    --bs-tooltip-bg: #373A3C;
+    --bs-tooltip-color: #FFFFFF;
+}
   footer {
     background-color: aquamarine;
     color: white;
-    height: 50px;
+    height: 100px;
   }

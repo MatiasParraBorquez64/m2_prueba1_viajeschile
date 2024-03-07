@@ -31,10 +31,12 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <!--Comentario: Aquí es donde se coloca el enlace de BOOTSTRAP JS para poder utilizar estilos predeterminados y trabajar mas agilmente-->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <!--Comentario: Aquí es donde se coloca el enlace a GOOGLEFONTS-->
-
-    <!--Comentario: Aquí es donde se coloca el enlace a GOOGLEFONTS 2-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -57,7 +59,7 @@
     <!-- INICIO HEADER -->
     <header id="header_navabar_id" class="header">
         <!-- INICIO NAVBAR -->
-        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html"><img id="svg_navbar" src="./assets/img/viajes.svg"
                         alt="viajes svg">
@@ -244,7 +246,7 @@
                             required></textarea>
                     </div>
                     <div class="d-flex justify-content-start">
-                        <button type="button" class="btn btn-info">Enviar</button>
+                        <button type="button" class="btn btn-info"  data-toggle="tooltip" data-placement="bottom" data-bs-custom-class="custom-tooltip1" title="Se enviara el mensaje al hacer click">Enviar</button>
                     </div>
                 </form>
             </div>
@@ -255,22 +257,25 @@
     <!-- FIN MAIN -->
     <!-- INICIO FOOTER -->
     <footer id="footer_id">
-        <section class="d-flex justify-content-around align-items-center">
+        <section class="d-flex justify-content-around pt-3">
             <div>
                 <h4>VIAJES CHILE</h4>
             </div>
-            <div class="row d-flex justify-content-end">
+            <div class="row d-flex justify-content-end align-items-center">
                 <div class="col">
                     <a href="https://github.com/" target="_blank"><i class="fa-brands fa-square-github fa-3x"></i></a>
                 </div>
                 <div class="col">
-                    <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+                    <a href="https://www.linkedin.com/feed/" target="_blank"><i
+                            class="fa-brands fa-linkedin fa-3x"></i></a>
                 </div>
                 <div class="col">
-                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-twitter fa-3x"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i
+                            class="fa-brands fa-square-twitter fa-3x"></i></a>
                 </div>
                 <div class="col">
-                    <a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-square-facebook fa-3x"></i></a>
+                    <a href="https://twitter.com/?lang=es" target="_blank"><i
+                            class="fa-brands fa-square-facebook fa-3x"></i></a>
                 </div>
             </div>
         </section>
